@@ -1,0 +1,188 @@
+<!DOCTYPE html>  <!--声明文档类型-->
+<html>
+<head>
+  <meta charest="UTF-8">
+  <meta name="keywords" content="体检">        <!--关键字，SEO优化 便于爬虫寻找-->
+  <meta name="Author" content="依然阿拉丁">    <!--作者-->
+  <meta name="Descrption" content="体检报告练习">  <!--网页描述-->
+  <title>体检报告</title>
+  <style type="text/css">
+    h2 {
+      font-size:3.5em;
+    }
+    thead {
+      font-size: 20px;
+      color: #9C9C9C;
+    }
+    tfoot {
+      color: #7F7F7F;
+    }
+    td {
+      width: 200px;
+    }
+    .name {
+      width: 60%;
+      margin:auto ;
+      text-align: center;
+      border: 1px black solid;
+    }                          /*设置name的DIV格式*/
+    .hosptial {
+      text-align: center;
+      margin-top: 200px;
+    }
+    .hosptial p {
+      font-size: 25px;
+      font-color:black;
+    }
+    .hosptial a {
+      font-size: 20px;
+    }
+    .message {
+      border-bottom:1px black solid;
+      width: 60%;
+      margin: auto;
+      margin-top: 200px;
+      text-align: center;
+    }
+    .result {
+      width: 60%;
+      margin: auto;
+      font-size: 16px;
+    }
+    .result p:nth-of-type(1) {
+      font-size: 25px;
+      text-align: center;
+    }
+    .result p:nth-of-type(2) {
+      text-align: left;
+      font-size: 20px;
+    }
+    .result p:nth-of-type(3) {
+      text-align: right;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .result p:nth-of-type(4) {
+      font-weight: bold;
+    }
+    .neike {
+      width: 100%;
+      margin: auto;
+      line-height: 50px;
+    }
+    .neike table {
+      text-align: left;
+    }
+    .waike {
+      width: 100%;
+      margin: auto;
+      line-height: 50px;
+    }
+    .waike table {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="name">
+    <p>姓名(Name):登哥&nbsp&nbsp&nbsp&nbsp&nbsp年龄(Age):28岁&nbsp&nbsp&nbsp&nbsp&nbsp性别(Sex):男</p>
+    <p>体检号(Check up NO.)：1019550</p>
+    <p>体检日期(Date of Check up)：2017-9-21</p>
+  </div>
+  <div class="hosptial">
+     <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2015782880,1268161847&fm=27&gp=0.jpg" title="医院LOGO"><br/><br/>
+     <h2>健康体检报告</h2>
+     <p>上海市东方医院体检中心</p>
+     <a href="http://wwww.dfjky.com">www.dfjky.com</a>
+  </div>
+  <div class="message">
+    <p>姓名：登哥&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp体检号:1019550&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp体检次数:1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp上海市东方医院体检中心</p>
+  </div>
+  <div class="result">
+    <p>本次体检结果及建议</p>
+    <p>本次结果未见异常</p>
+    <p>主检医生：德-安东尼</p>
+    <p>提醒：</p>
+    <p>1.您过去如果患有疾病，因本次体检范围有限未能发现到的情况，仍按原诊断治疗。</p>
+    <p>2.查处的疾病及时治疗，异常项目请到医院复查。</p>
+    <div class="neike">
+      <table>
+        <thead>
+          <tr>
+            <td>内科</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>病史</th>
+            <td>无</td>
+            <th>血压</th>
+            <td>124/77 mmhg</td>
+          </tr>
+          <tr>
+            <th>心率</th>
+            <td>96次/分钟</td>
+            <th>呼吸音</th>
+            <td>正常</td>
+          </tr>
+          <tr>
+            <th>心律</th>
+            <td>正常</td>
+            <th>肝肋下</th>
+            <td>未触及</td>
+          </tr>
+          <tr>
+            <th>脾肋下</th>
+            <td>未触及</td>
+            <th>肾区叩击痛</th>
+            <td>无</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>小结：未见异常</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="waike">
+      <table>
+        <thead>
+          <tr>
+            <td>外科</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>身高</th>
+            <td>190cm</td>
+            <th>体重</th>
+            <td>62.8KG</td>
+          </tr>
+          <tr>
+            <th>甲状腺</th>
+            <td>正常</td>
+            <th>四肢关节</th>
+            <td>未见明显异常</td>
+          </tr>
+          <tr>
+            <th>脊柱</th>
+            <td>正常</td>
+            <th>疝气</th>
+            <td>无</td>
+          </tr>
+          <tr>
+            <th>淋巴结</th>
+            <td>正常</td>
+          </tr>
+        </tbody> 
+        <tfoot>
+          <tr>
+            <td>小结:未见异常</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</body>  
+</html>
