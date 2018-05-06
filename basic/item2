@@ -26,6 +26,9 @@
       text-align: center;
       border: 1px black solid;
     }                          /*设置name的DIV格式*/
+    .name p:nth-of-type(2) {
+      white-space:pre;
+    }
     .hosptial {
       text-align: center;
       margin-top: 200px;
@@ -44,6 +47,9 @@
       margin-top: 200px;
       text-align: center;
     }
+    .message p {
+      wihte-space:pre;
+    }                 /*保持原文的空格换行等行为*/
     .result {
       width: 60%;
       margin: auto;
@@ -85,7 +91,7 @@
 </head>
 <body>
   <div class="name">
-    <p>姓名(Name):登哥&nbsp&nbsp&nbsp&nbsp&nbsp年龄(Age):28岁&nbsp&nbsp&nbsp&nbsp&nbsp性别(Sex):男</p>
+    <p>姓名(Name):登哥     年龄(Age):28岁     性别(Sex):男</p>
     <p>体检号(Check up NO.)：1019550</p>
     <p>体检日期(Date of Check up)：2017-9-21</p>
   </div>
@@ -96,7 +102,7 @@
      <a href="http://wwww.dfjky.com">www.dfjky.com</a>
   </div>
   <div class="message">
-    <p>姓名：登哥&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp体检号:1019550&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp体检次数:1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp上海市东方医院体检中心</p>
+    <p>姓名：登哥                    体检号:1019550                    体检次数:1                    上海市东方医院体检中心</p>
   </div>
   <div class="result">
     <p>本次体检结果及建议</p>
