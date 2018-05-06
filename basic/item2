@@ -26,8 +26,8 @@
       text-align: center;
       border: 1px black solid;
     }                          /*设置name的DIV格式*/
-    .name p:nth-of-type(2) {
-      white-space:pre;
+    .name p {
+      white-space: pre;
     }
     .hosptial {
       text-align: center;
@@ -48,7 +48,7 @@
       text-align: center;
     }
     .message p {
-      wihte-space:pre;
+      white-space: pre;
     }                 /*保持原文的空格换行等行为*/
     .result {
       width: 60%;
