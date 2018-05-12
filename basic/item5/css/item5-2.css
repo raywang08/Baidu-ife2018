@@ -1,0 +1,40 @@
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+h1 {
+	color: white;
+	width: 150px;
+	height: 680px;   /*这个高度试了好几个方法不会。最后慢慢取值设定的，不知道什么方法才可以*/
+	margin: 0 20px 0 0;
+	text-align: center;
+	background-color: #65A4FA;
+	float: left;
+	padding-top: 60px; 
+}
+h2 {
+	font-size: 2em;
+}
+a {
+	padding-left: 10px;
+}
+p {
+	font-size: 1.5em;
+	font-weight: bold;
+	display: inline-block;
+	padding-right: 30px;
+	margin: 0 auto;
+}
+span {
+	font-weight: initial;
+	padding-left: 10px;
+}
+dt {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+dd {
+	font-size: 1.5em;
+	margin-left: 0;
+	margin-bottom: 20px;
+}
