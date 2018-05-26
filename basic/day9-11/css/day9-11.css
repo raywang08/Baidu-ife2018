@@ -1,0 +1,435 @@
+body {
+			width: 1600px;
+			margin: 0 auto;
+			font-family: "Montserrat";
+		}
+		.header {
+			width: 100%;
+			height: 990px;
+			background-image: url(images/item7/前端学院设计图_0000s_0002s_0002_图层-1.png);
+			background-repeat: no-repeat;
+		}
+		.shadow {
+			width: 100%;
+			height: 100%;
+			background-image: url(images/item7/前端学院设计图_0000s_0002s_0001_Background.png); /*也可以用添加个背景色rgba(0,0,0,0.6)规则*/
+			background-repeat: no-repeat;
+		}
+		.shadow > p:nth-of-type(1) {
+			margin: 0;
+			padding-top: 200px;
+			text-align: center;
+			font-size: 62px;
+			color: #fff;
+		} 
+		.shadow > p:nth-of-type(2) {
+			margin: 0 auto;
+			padding-top: 80px;
+			text-align: center;
+			font-size: 20px;
+			line-height: 32px;
+			width: 750px;
+			color: rgba(255,255,255,0.75);
+		}
+		.login {
+			margin: 0 auto;
+			margin-top: 100px;
+			border: 1px rgba(255,255,255,0.2) solid;   /*使边框存在透明度*/
+			border-radius: 2px;  /*圆角*/
+			width: 968px;
+			height: 248px;
+			text-align: center;
+		}
+		.login p:nth-of-type(1) {
+			margin: 60px auto auto auto ;
+			color: #fff;
+			font-size: 16px;
+		}
+		.login p:nth-of-type(2) {
+			margin-bottom: 45px;
+			color: rgba(255,255,255,0.35);
+			font-size: 12px;
+		}
+		.login input:nth-of-type(1) {
+			margin-right: 30px;
+			padding-left: 25px;
+			width: 290px;
+			height: 48px;
+			font-size: 14px;
+			border: 1px rgba(255,255,255,0.2) solid;
+			color: #fff;
+			background: transparent;   /*背景色透明，相当于没有背景，也可rgba(0,0,0,0)任意颜色代码都行，只要最后一位是0保持全透明即可*/
+		}
+		.login input:nth-of-type(2) {
+			margin-right: 30px;
+			padding-left: 25px;
+			width: 290px;
+			height: 48px;
+			font-size: 14px;
+			border: 1px rgba(255,255,255,0.35) solid;
+            color: rgba(255,255,255,0.35);
+            background: transparent;
+		}
+		.login input:nth-of-type(3) {
+			border: 0;
+			width: 120px;
+			height: 50px;
+			font-size: 12px;
+			letter-spacing: 2px;
+			background-color: #fff;
+		}
+		.introduction-all {
+			display: flex;
+			flex-wrap: wrap;
+			width: 1050px;
+			margin: 0 auto;
+			justify-content: space-between;
+		}
+		.introduction-all p:nth-of-type(1) {
+			font-size: 20px;
+		}
+		.introduction-all p:nth-of-type(2) {
+			padding-left: 75px;
+			width: 340px;
+			font-size: 16px;
+			line-height: 25px;
+			color: rgba(20,20,20,0.6);
+			word-break:break-all;
+		}
+		.introduction > p:nth-of-type(1) {
+			margin-top: 90px;
+			font-size: 14px;
+			text-align: center;
+			letter-spacing: 2px;
+			word-spacing: 3px;
+		}
+		.introduction > p:nth-of-type(2) {
+			margin: 40px auto 80px auto;
+			width: 660px;
+			font-size: 42px;
+			text-align: center;
+		}
+		.introduction-1 p:nth-of-type(1)::before {                                           /*添加小图标，亦可用span标签加入背景图像实现（要设置宽高和display）*/
+			content: url(images/item7/前端学院设计图_0001s_0001s_0000s_0000_Iphone-Icon.png);
+			float: left;
+			padding-right: 25px;
+			width: 50px;
+			height: 50px;
+		}
+		.introduction-2 p:nth-of-type(1)::before {
+			content: url(images/item7/前端学院设计图_0001s_0001s_0002s_0001_Check-Icon.png);
+			float: left;
+			padding-right: 25px;
+			width: 50px;
+			height: 50px;
+		}
+		.introduction-3 p:nth-of-type(1)::before {
+			content: url(images/item7/前端学院设计图_0001s_0001s_0001s_0000_Pencil-Icon.png);
+			float: left;
+			padding-right: 25px;
+			width: 50px;
+			height: 50px;
+		}
+		.introduction-4 p:nth-of-type(1)::before {
+			content: url(images/item7/前端学院设计图_0001s_0001s_0003s_0000_Settings-Icon.png);
+			float: left;
+			padding-right: 25px;
+			width: 50px;
+			height: 50px;
+		}
+		.show {
+			width: 100%;
+			height: 800px;
+			margin-top: 100px;
+			background-image: url(images/item7/前端学院设计图_0002s_0002s_0005_图层-2.png);
+		}
+		.shadow-2 {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-image: url(images/item7/前端学院设计图_0002s_0002s_0004_Background.png);
+		}
+		.show-1 {
+			position: absolute;
+			top: 180px;
+			left: 310px;
+			margin: 0 auto;
+			width: 500px;
+		}
+		.show-1 p:nth-of-type(1) {
+			margin: 0;
+			width: 400px;
+			color: #fff;
+			font-size: 42px;
+		}
+		.show-1 p:nth-of-type(2) {
+			margin-bottom: 78px;          /*保证和下面的两个超链接位置间隔*/
+			width: 400px;
+			color: rgba(255,255,255,0.5);
+			font-size: 18px;
+			line-height: 25px;
+		}
+		.show-1 p a {
+			margin-top: 60px;
+			padding: 20px 42px;
+			border: 1px #fff solid;
+			border-radius: 2px;
+			text-decoration: none;
+		}
+		.show-1 p a:nth-of-type(1) {
+			margin-right: 30px;
+			color: #141414;
+			font-size: 12px;
+			background-color: #fff;
+			word-spacing: 3px;
+			letter-spacing: 1px;
+		}
+		.show-1 p a:nth-of-type(2) {
+			color: #fff;
+			word-spacing: 3px;
+			letter-spacing: 1px;
+		}
+        .show-2 {
+			position: absolute;
+			right: 0;
+			top: 110px;
+			width: 585px;
+			height: 600px;
+			background-image: url(images/item7/前端学院设计图_0002s_0002s_0002_Screen.png);
+			background-repeat: no-repeat;
+		}
+		.show-2 img {
+			position: absolute;
+			bottom: 28px;
+			right: 0;
+			width: 645px;
+		}
+		.products {
+			width: 1600px;
+			height: 530px;
+		}
+		.products > p {
+			margin-top: 100px;
+			margin-bottom: 90px;
+			font-size: 42px;
+			text-align: center;
+		}
+		.paragraph {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			width: 900px;
+		}
+		.p1,.p2,.p3 {
+			width: 250px;
+			font-size: 16px;
+			color: rgba(20,20,20,0.7);
+			line-height: 28px;
+		}
+		.paragraph img {
+			padding-left: 65px;
+		}
+		.p2 img {
+			padding-left: 80px;
+		}
+		.picture {
+			padding: 110px 300px;
+			margin: 0 auto;
+			border-top: 1px #d3d3d3 solid;
+			border-bottom: 1px #d3d3d3 solid;
+			overflow: hidden;
+		}
+		.picture p:nth-of-type(1) {
+			padding-top: 70px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+		.picture p:nth-of-type(2) {
+			font-size: 16px;
+			color: rgba(20,20,20,0.7);
+			line-height: 30px;
+		}
+		.picture-1 img {
+			float: left;
+			padding-right: 100px;
+		}
+		.picture-2 {
+			clear: both;
+			margin-top: 90px;
+		}
+		.picture-2 img {
+			float: right;
+			padding-left: 100px;
+		}
+		.people {
+			font-size: 0;     /*去除掉子img子元素默认的8px间隔*/
+			overflow: hidden;
+		}
+		.people p:nth-of-type(1) {
+			font-size: 42px;
+			text-align: center;
+		}
+		.people p:nth-of-type(2) {
+			margin: 0 auto;
+			margin-bottom: 60px;
+			width: 700px;
+			font-size: 18px;
+			text-align: center;
+			color: rgba(20,20,20,0.7);
+		}
+		.people a:nth-of-type(1) {
+			position: relative;
+			left: 310px;
+		}
+		.people a:nth-of-type(2) {
+			position: relative;
+			left: 340px;
+		}
+		.people a:nth-of-type(3) {
+			position: relative;
+			left: -640px;
+			top: 400px;
+		}
+		.people a:nth-of-type(4) {
+			position: relative;
+			top: 30px;
+			left: 810px;
+		}
+		.contact {
+			position: relative;
+			width: 100%;
+			height: 700px;
+			margin: 0 auto;
+			margin-top: 90px;
+			border-top: 1px #d3d3d3 solid;
+		}
+		.letter {
+			position: absolute;
+			top: 70px;
+			left: 320px;
+			width: 470px;
+			height: 560px;
+			border: 1px #d3d3d3 solid;
+			border-radius: 10px;
+			text-align: center;
+		}
+		.letter p {
+			margin: 40px 0;
+			font-size: 16px;
+			letter-spacing: 1px;
+		}
+		.letter input {
+			width: 348px;          /*input总宽固定。减去boder和padding就是内容宽度，下面高度同理*/
+			height: 50px;
+			padding: 0 0 0 20px;
+			margin-bottom: 30px;
+			border: 1px #d3d3d3 solid;
+			font-size: 14px;
+			color: rgba(20,20,20,0.5);
+		}
+		.letter input:nth-of-type(3) {
+			width: 370px;
+			margin: 30px 0 0 0;
+			color: #fff;
+			background-color: #141414;
+		}
+		.letter textarea {
+			width: 349px;       /*总宽固定。减去boder和padding就是内容宽度，下面高度同理*/
+			height: 103px;
+			padding: 15px 0 0 20px;
+			border: 1px #d3d3d3 solid; 
+			color: rgba(20,20,20,0.5);
+			font-size: 14px;
+			resize: none;        /*去掉文本框右下角的拖拽线条*/
+		}
+		.address {
+			position: absolute;
+			top: 100px;
+			left:900px;
+			width: 380px;
+			font-size: 16px;
+			color: #141414;
+		}
+		.address > p:nth-of-type(1) {
+			font-size: 42px;
+		}
+		.address > p:nth-of-type(2) {
+			color: rgba(20,20,20,0.5);
+			line-height: 25px;
+		}
+		.address-1 p:nth-of-type(2) {
+			margin: 10px 0 30px 0;
+		}
+		.address-1::before {
+			content: url(images/item7/前端学院设计图_0006s_0001s_0002s_0000_Map-Icon.png);
+			float: left;
+			padding: 10px 20px 0 0;
+		}
+		.address-2::before {
+			content: url(images/item7/前端学院设计图_0006s_0001s_0001s_0000_Phone-Icon.png);
+			float: left;
+			padding: 0 20px 0 0;
+		}
+		.address-3::before {
+			content: url(images/item7/前端学院设计图_0006s_0001s_0000s_0000_Mail-Icon.png);
+			float: left;
+			padding: 2px 20px 0 0;
+		}
+		.address-3 p {
+			margin: 30px;
+		}
+		.footter {
+			position: relative;
+			margin: 0 auto;
+			width: 100%;
+			height: 410px;
+			font-size: 14px;
+			color: #fff;
+			background-color: #141414;
+		}
+		.footter p {
+			margin: 30px 0;
+		}
+		.footter a {
+			font-size: 16px;
+			text-decoration: none;
+			color: rgba(255,255,255,0.5);
+		}
+		.footter a:hover {       /*悬停效果*/
+			opacity: .5;
+		}
+		.f4 p:nth-of-type(2) {
+			font-size: 18px;
+			color: rgba(255,255,255,0.7);
+		}
+		.f1 {
+			position: absolute;    /*也可以相对定位*/
+			top: 90px;
+			left: 210px;
+		}
+		.f2 {
+			position: absolute;
+			top: 90px;
+			left: 510px;
+		}
+		.f3 {
+			position: absolute;
+			top: 90px;
+			left: 810px
+		}
+		.f4 {
+			position: absolute;
+			top: 90px;
+			left: 1110px;
+			width: 265px;
+			word-break: break-all;
+		}
+		.f4 p {
+			margin: 25px 0;     /*让下面的P增加行高后仍和左边平行*/
+		}
+		.f4 p:nth-of-type(2) {
+			line-height: 30px;
+		}
+		.f4 img {
+			margin-right: 20px;
+		}
