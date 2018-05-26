@@ -6,7 +6,7 @@ body {
 .header {
     width: 100%;
     height: 990px;
-    background-image: url(../images/前端学院设计图_0000s_0002s_0002_图层-1.png);
+    background-image: url(./images/前端学院设计图_0000s_0002s_0002_图层-1.png);
     background-repeat: no-repeat;
 }
 .shadow {
