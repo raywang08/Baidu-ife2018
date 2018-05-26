@@ -6,13 +6,13 @@ body {
 .header {
     width: 100%;
     height: 990px;
-    background-image: url(images/前端学院设计图_0000s_0002s_0002_图层-1.png);
+    background-image: url(../images/前端学院设计图_0000s_0002s_0002_图层-1.png);
     background-repeat: no-repeat;
 }
 .shadow {
     width: 100%;
     height: 100%;
-    background-image: url(images/前端学院设计图_0000s_0002s_0001_Background.png); /*也可以用添加个背景色rgba(0,0,0,0.6)规则*/
+    background-image: url(../images/前端学院设计图_0000s_0002s_0001_Background.png); /*也可以用添加个背景色rgba(0,0,0,0.6)规则*/
 	background-repeat: no-repeat;
 }
 .shadow > p:nth-of-type(1) {
@@ -110,28 +110,28 @@ body {
 	text-align: center;
 }
 .introduction-1 p:nth-of-type(1)::before {                                           /*添加小图标，亦可用span标签加入背景图像实现（要设置宽高和display）*/
-	content: url(images/前端学院设计图_0001s_0001s_0000s_0000_Iphone-Icon.png);
+	content: url(../images/前端学院设计图_0001s_0001s_0000s_0000_Iphone-Icon.png);
 	float: left;
 	padding-right: 25px;
 	width: 50px;
 	height: 50px;
 }
 .introduction-2 p:nth-of-type(1)::before {
-	content: url(images/前端学院设计图_0001s_0001s_0002s_0001_Check-Icon.png);
+	content: url(../images/前端学院设计图_0001s_0001s_0002s_0001_Check-Icon.png);
 	float: left;
 	padding-right: 25px;
 	width: 50px;
 	height: 50px;
 }
 .introduction-3 p:nth-of-type(1)::before {
-	content: url(images/前端学院设计图_0001s_0001s_0001s_0000_Pencil-Icon.png);
+	content: url(../images/前端学院设计图_0001s_0001s_0001s_0000_Pencil-Icon.png);
 	float: left;
 	padding-right: 25px;
 	width: 50px;
 	height: 50px;
 }
 .introduction-4 p:nth-of-type(1)::before {
-	content: url(images/前端学院设计图_0001s_0001s_0003s_0000_Settings-Icon.png);
+	content: url(../images/前端学院设计图_0001s_0001s_0003s_0000_Settings-Icon.png);
 	float: left;
 	padding-right: 25px;
 	width: 50px;
@@ -141,13 +141,13 @@ body {
 	width: 100%;
 	height: 800px;
 	margin-top: 100px;
-	background-image: url(images/前端学院设计图_0002s_0002s_0005_图层-2.png);
+	background-image: url(../images/前端学院设计图_0002s_0002s_0005_图层-2.png);
 }
 .shadow-2 {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-image: url(images/前端学院设计图_0002s_0002s_0004_Background.png);
+	background-image: url(../images/前端学院设计图_0002s_0002s_0004_Background.png);
 }
 .show-1 {
 	position: absolute;
@@ -195,7 +195,7 @@ body {
 	top: 110px;
 	width: 585px;
 	height: 600px;
-	background-image: url(images/前端学院设计图_0002s_0002s_0002_Screen.png);
+	background-image: url(../images/前端学院设计图_0002s_0002s_0002_Screen.png);
 	background-repeat: no-repeat;
 }
 .show-2 img {
@@ -361,17 +361,17 @@ people a:nth-of-type(2) {
 	margin: 10px 0 30px 0;
 }
 .address-1::before {
-	content: url(images/前端学院设计图_0006s_0001s_0002s_0000_Map-Icon.png);
+	content: url(../images/前端学院设计图_0006s_0001s_0002s_0000_Map-Icon.png);
 	float: left;
 	padding: 10px 20px 0 0;
 }
 .address-2::before {
-	content: url(images/前端学院设计图_0006s_0001s_0001s_0000_Phone-Icon.png);
+	content: url(../images/前端学院设计图_0006s_0001s_0001s_0000_Phone-Icon.png);
 	float: left;
 	padding: 0 20px 0 0;
 }
 .address-3::before {
-	content: url(images/前端学院设计图_0006s_0001s_0000s_0000_Mail-Icon.png);
+	content: url(../images/前端学院设计图_0006s_0001s_0000s_0000_Mail-Icon.png);
 	float: left;
 	padding: 2px 20px 0 0;
 }
