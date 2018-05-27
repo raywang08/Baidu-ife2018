@@ -366,7 +366,7 @@
 			padding: 10px 20px 0 0;
 		}
 		.address-2::before {
-			content: url(./images/前端学院设计图_0006s_0001s_0001s_0000_Phone-Icon.png);
+			content: url(../images/前端学院设计图_0006s_0001s_0001s_0000_Phone-Icon.png);
 			float: left;
 			padding: 0 20px 0 0;
 		}
