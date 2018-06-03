@@ -1,0 +1,550 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {               /*本页面采用定位法，使左侧两页面定宽，最右侧div采用margin赋值法正好等于左边两侧宽度从而达到自适应宽度，自适应高度100%方法实现*/
+	height: 100%;
+}
+.main {
+	position: relative;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+.sidebar {                 /*定宽高度自适应代码*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+    height: 100%;
+	background-color: #1D2531;
+	margin-bottom: -10000px;
+	padding-bottom: 10000px;
+}
+.sidebar a:hover {
+	opacity: .5;
+}
+.map {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 60px;
+	height: 60px;  
+	border-radius: 50%;           /*圆圈写法*/
+    background-color: #2E9FF6;       
+}
+.map a img {                 /*因为小图标不规则，只能通过定位法模糊定位位置*/
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.rocket {
+	position: fixed;
+	top: 100px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #9178E4; 
+}
+.rocket a img {
+	position: absolute;
+	top: 12px;
+	left: 18px;
+}
+.game {
+	position: fixed;
+	top: 180px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: #D11610;
+	border-radius: 50%;
+}
+.game a img {
+	position: absolute;
+	top: 18px;
+	left: 14px;
+}
+.add {
+	position: fixed;
+	top: 260px;
+	left: 20px;
+}
+.grid {
+	position: fixed;
+	left: 25px;
+	bottom: 20px;
+}
+.setting {
+	position: fixed;
+	left: 55px;
+	bottom: 20px;
+}
+.nav {                      /*定宽高度自适应代码*/
+	position: absolute;
+	top: 0;
+	left: 100px;
+	width: 250px;
+	height: 100%;
+	background-color: #222C3C;
+	margin-bottom: -10000px;
+	padding-bottom: 10000px;
+}
+.notice-tip {
+	display: flex;
+	justify-content: space-between;
+}
+.number-tip {
+	display: inline-block;
+	width: 30px;
+	height: 24px;
+	color: #fff !important;     /*让权重大于后面设置的全局属性，不过最好少用，后期维护困难*/  
+	text-align: center;
+	line-height: 24px;
+	background-color: #2E9FF6;
+	border-radius: 15px;
+}
+.symbol-tip {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	color: #fff !important;
+	line-height: 24px;
+	text-align: center;
+	text-transform: lowercase !important;
+	border-radius: 50%;
+	background-color: #DC3D22;
+}
+.nav p {
+	margin-top: 20px;
+	color: #5A6678;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.nav li {
+	list-style: none;
+	margin-top: 15px;
+}
+.nav li a {
+	color: 	#B7C0CD;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.nav li a:hover {
+	opacity: .5;
+}
+.menu,.products,.dashboard,.process {
+	margin: 0 auto;
+	padding-bottom: 20px;
+	width: 190px;
+	border-top: 1px #2A3547 solid;
+}
+.menu > p {
+	margin-top: 30px;
+}
+.products li:nth-of-type(1) {
+	background: url(../images/Book-of-Wisdom.png) no-repeat left center;
+	padding-left: 25px;
+}
+.products li:nth-of-type(2) {
+	background: url(../images/Video-Camera.png) no-repeat left center;
+	padding-left: 25px;
+}
+.products li:nth-of-type(3) {
+	background: url(../images/Chart.png) no-repeat left center;
+	padding-left: 25px;
+}
+.products li:nth-of-type(4) {
+	background: url(../images/Painting.png) no-repeat left center;
+	padding-left: 25px;
+}
+.process {
+	position: fixed;
+	left: 130px;
+	bottom: 20px;
+	padding: 0;
+	border: 0;
+}
+.process > p {
+	padding-bottom: 10px;
+}
+.process p span {
+	font-size: 10px;
+	text-transform: capitalize;
+	color: #fff;
+}
+.process p span + span span {     /*3200页面字体变细*/
+	font-weight: lighter;
+}
+.process-bar {                   /*进度条*/
+	width: 200px;
+	height: 4px; 
+	border-radius: 5px;
+	background-color: #2D3949;
+}
+.process-bar div {
+	width: 30%;
+	height: 100%;
+	background-color: #907AE4;
+	border-radius: 5px;
+}
+.content {                   /*高度自适应，宽度自适应代码*/
+	position: relative;
+	margin-left: 350px;      /*等于左侧两DIV宽度*/
+	height: 100%;
+}
+.chat-header {
+	width: 100%;
+	height: 80px;
+}
+.chat-messages {
+	padding-left: 30px;
+	font-size: 24px;
+	color: #354052;
+	line-height: 80px;    /*等于高度达到垂直居中*/
+}
+.user {
+	position: fixed;
+	top: 15px;
+	right: 0;
+	padding: 0 80px 0 65px;
+	height: 50px;
+	font-size: 16px;
+	color: #2399F1;
+	background: url(../images/Photo.png) no-repeat left center;
+}
+.user p {
+	margin-top: 4px;               /*让图像显得居中显示，不加此规则文字和图像不协调，不知道怎么实现，所以人工加入此规则*/
+}
+.user p + p {
+	font-size: 14px;
+	color: #B5B5B5;
+}
+.more-icon {
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/dropdown.png) no-repeat center;
+}
+.chat {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 400px;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #585D67;
+	border-right: 1px #d3d3d3 solid;
+}
+.search {
+	width: 400px;
+	height: 70px;
+	text-align: center;               /*让input元素水平在父DIV中，亦可调节margin来完成，垂直居中让行高等于高度即可*/
+	box-sizing: border-box;
+	border: 1px #d3d3d3 solid;
+	border-left: 
+}
+.search input {
+	width: 320px;
+	height: 35px;
+	margin: 15px 0 20px 0;
+	padding-left: 20px;
+	color: rgba(159, 169, 186, 0.8);
+	background: url(../images/Search-icon.png) no-repeat 95% center;
+	border: 1px #d3d3d3 solid;
+	border-radius: 4px;
+}
+.chat-container {
+	position: relative;
+	padding-left: 30px;
+	width: 400px;          /*内容宽和padding之和正好400px,等于父元素宽或者使用box-sizing: border-box免与计算*/
+	height: 130px;
+	box-sizing: border-box;
+	border-left: 2px #fff solid;
+	border-bottom: 1px #d3d3d3 solid;
+}
+.chat-container:hover {
+	border-left: 2px #2E9FF6 solid;
+}
+.chat-item-text {
+	display: -webkit-box;                    /* 对象作为伸缩盒子模型显示 */
+	padding-right: 20px;
+	text-overflow: ellipsis;                 /*超出宽度省略号显示*/
+	overflow: hidden;
+	-webkit-line-clamp: 2;                   /*2行显示*/
+	-webkit-box-orient: vertical;            /* 设置或检索伸缩盒对象的子元素的排列方式 */
+}
+.chat-container .chat-item-1 + p {
+	padding-right: 40px;
+}
+.chat-container div > p:nth-of-type(1) {         /*强调每个聊天的人名样式*/
+	padding-top: 8px;
+	font-size: 16px;
+	color: #585D68;
+}
+.chat-container div > p:nth-of-type(2) {         /*强调聊天来源样式*/
+	color: #B5B5B5; 
+}
+.chat-container div span {                       /*强调每个聊天信息样式*/
+	color: #7F8FA4; 
+}
+.chat-container .chat-item-1 p:nth-of-type(1) {  /*未读信息样式*/
+	padding-left: 15px;
+	color: #2399F1;
+	background: url(../images/newmessages.png) no-repeat left 15px;   /*圆点位置*/
+}
+.chat-item-1 {
+	position: relative;
+	margin: 10px 0 10px 0;
+    height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic1.png) no-repeat left center;
+}
+.chat-item-tip {
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	background-color: #2E9FF6;
+}
+.chat-item-2 {
+	position: relative;
+	margin: 10px 0 10px 0;
+	height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic2.png) no-repeat left center;
+}
+.chat-item-3 {
+	position: relative;
+	margin: 10px 0 10px 0;
+    height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic3.png) no-repeat left center;
+}
+.chat-item-4 {
+	position: relative;
+	margin: 10px 0 10px 0;
+    height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic4.png) no-repeat left center;
+}
+.chat-item-5 {
+	position: relative;
+	margin: 10px 0 10px 0;
+    height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic5.png) no-repeat left center;
+}
+.chat-item-6 {
+	position: relative;
+	margin: 10px 0 10px 0;
+    height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic6.png) no-repeat left center;
+}
+.chat-item-7 {
+	position: relative;
+	margin: 10px 0 10px 0;
+    height: 50px;
+	padding-left: 65px;
+	background: url(../images/Pic7.png) no-repeat left center;
+}
+.chat-item-info {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+}
+.chat-item-status {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+}
+.open-chat {
+	height: 100%;
+	margin-left: 400px;
+}
+.status {
+	height: 70px;    /*忽然发现可以设置box-sizing:border-box，这样border和padding可算在整体宽高里面，高度不用减去border了，前面经过计算的代码可以这么设置，免于计算*/
+	border-top: 1px #d3d3d3 solid;
+	border-bottom: 1px #d3d3d3 solid;
+	line-height: 70px;
+	box-sizing: border-box;
+}
+.status p:nth-of-type(1) {
+	display: inline;         /*防止自动铺满整行，又不想设置宽度*/
+	margin-left: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #585E68;
+	background: url(../images/Status.png) no-repeat right 10px;
+	padding-right: 20px;
+}
+.status p:nth-of-type(2) {
+	position: fixed;
+	top: 100px;
+	right: 110px;
+	height: 30px;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #56688A;
+	line-height: 30px;
+	border-left: 1px #E6E9EC solid;
+}
+.status-bar {
+	position: fixed;
+	top: 100px;
+	right: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100px;
+	height: 30px;
+	border: 1px #d3d3d3 solid;
+	border-radius: 5px;
+	background-color: #F7F7F7;
+}
+.status-bar-1 {
+	padding-left: 5px;           /*调整图标位置*/
+}
+.status-bar-2 {
+	box-sizing: border-box;
+	padding: 0 8px 0 8px;
+	height: 30px;
+	line-height: 30px;
+	border-left: 1px #d3d3d3 solid;
+	border-right: 1px #d3d3d3 solid;
+}
+.status-bar-3 {
+	padding-right: 5px;
+}
+.arrow-bar {
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px #d3d3d3 solid;
+	border-radius: 5px;
+	background-color: #F7F7F7;
+}
+.arrow-left {
+	height: 30px;
+	box-sizing: border-box;
+	line-height: 30px;
+	border-right: 1px #d3d3d3 solid;
+	padding: 0 15px 0 5px;
+}
+.arrow-right {
+	padding-right: 5px;
+}
+.open-chat-1,.open-chat-2,.open-chat-3,.open-chat-4,.open-chat-5 {
+	margin: 30px 60px 30px 30px;
+	padding-left: 70px;
+}
+.open-chat-1 {
+	background: url(../images/Pic1.png) no-repeat left top;
+}
+.open-chat-2 {
+	background: url(../images/Pic8.png) no-repeat left top;
+}
+.open-chat-3 {
+	background: url(../images/Pic1.png) no-repeat left top;
+}
+.open-chat-4 {
+	background: url(../images/Pic8.png) no-repeat left top;
+}
+.open-chat-5 {
+	background: url(../images/Pic1.png) no-repeat left top;
+}
+.open-chat-name {
+	font-size: 16px;
+	color: #585D68;
+	padding-right: 10px;
+}
+.open-chat-time {
+	font-size: 14px;
+	color: #7F8FA4;
+}
+.open-chat-text {
+	margin-top: 5px;
+	font-size: 16px;
+	color: #585D68;
+}
+.divider {
+	position: relative;
+	height: 20px;
+	border-top: 1px rgba(159, 169, 186, 0.4) solid;
+}
+.divider-text {
+	position: absolute;
+	top: -50%;             /*分辨率变化时位置有点尴尬，不知道怎么实现同等缩放*/
+	left: 50%;            /*自适应居中，缩放位置坚挺，依然居中*/
+	background-color: #fff;
+	padding: 0 30px;
+}
+.open-chat-4 + div p {   /*让第二个.divider-text元素字体变色*/
+	color: #2399F1;
+}
+.open-chat-image {
+	position: relative;
+	display: inline-block;
+	margin: 10px 10px 0 0;
+}
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 156px;
+	height: 100px;
+	background-color: rgba(78,78,91,0.7);
+	opacity: 0;
+}
+.mask-icon {
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	background-color: rgba(117,118,122,0.5);
+}
+.mask:hover {                /*悬停效果*/
+	opacity: 1;
+}
+.reply {
+	display: flex;
+	position: relative;
+    margin: 50px 30px 20px 50px;
+	height: 50px;
+	box-sizing: border-box;
+	border: 1px #d3d3d3 solid;
+	border-radius: 5px;
+}
+.add-icon {
+	height: 50px;
+	width: 50px;
+	background: url(../images/Add-icon.png) no-repeat center;
+	background-color: #f7f7f7;
+}
+.add-text {
+	flex: 1;
+	border: 0;
+}
