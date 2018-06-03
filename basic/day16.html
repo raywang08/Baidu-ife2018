@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>简历</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body {
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  height: 40px;
+  color: white;
+  background-color: #848484;
+  line-height: 40px;      /*单行文字：行高和父元素高度一致可以垂直居中*/
+  padding-left: 20px;
+  margin: 0;
+} 
+div {
+  border: 0.5px #d6d6d6 solid;
+  height: 120px;
+  overflow: hidden;
+}
+h2 {
+  border-bottom: 0.5px white solid;
+  font-size: 1em;
+  background-color: #d6d6d6;
+  float: left;
+  width: 80px;
+  height: 120px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  line-height: 120px;
+}
+a {
+  padding-left: 10px;
+}
+p {
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 30px;
+}
+span {
+  font-weight: initial;
+  padding-left: 10px;
+}
+dt {
+  font-weight: bold;
+  float: left;
+}
+  </style>
+</head>
+<body>
+  <h1>简历</h1>
+  <div class="1">
+    <h2>基本信息</h2>
+    <p>姓名<span>张三</span></p>
+    <p>性别<span>男</span></p>
+    <p>应聘职位<span>Web前端工程师</span></p></br>
+    <p id="result1">欢迎！</p>  
+    <button id="test2-btn">点我有惊喜</button>
+    <button id="test3-btn">再点有福利</button>
+    <button id="test4-btn">欢迎交流</button>
+  </div>
+  <div>
+    <h2>联系方式</h2>
+    <p>手机<span>12312341234</span></p>
+    <p>Email<a href="#">joinefe@baidu.com</a></p>
+    <p>个人主页<a href="#">Github</a></p>
+  </div>
+  <div>
+    <h2>能力描述</h2>
+    <dl>
+      <dt>技术能力</dt>
+      <dd>熟练掌握HTML,CSS,JavaScript</dd>
+      <dt>综合能力</dt>
+      <dd>良好的沟通，主动积极，努力勤奋</dd>
+    </dl>
+  </div>
+  <div>
+    <h2>教育经历</h2>
+    <dl>
+      <dt>本科</dt>
+      <dd>百度前端技术学院小薇学院</dd>
+      <dt>研究生</dt>
+      <dd>百度前段技术学院大斌学院</dd>
+    </dl>
+  </div>
+  <div>
+    <h2>项目经历</h2>
+    <dl>
+      <dt>小度小度</dt>
+      <dd>作为前端工程师角色参与了ABC组件的开发</dd>
+      <dt>SAN Doc</dt>
+      <dd>作为文档工程师参与了SAN Doc编写</dd>
+    </dl>
+  </div>
+  <script type="text/javascript">
+    document.getElementById("test2-btn").onclick = function () {
+       alert("然而并没有惊喜，哈哈，你被骗了！");
+    }
+    document.getElementById("test3-btn").onclick = function () {
+      document.write('<img src="images/前端学院设计图_0005s_0001s_0002s_0000_3.png">');
+    }
+    document.getElementById("test4-btn").onclick = function () {
+      document.getElementById("result1").innerHTML = "诚信欢迎交流，我的github:https://github.com/raywang08";
+    }
+  </script>
+</body>
+</html>
