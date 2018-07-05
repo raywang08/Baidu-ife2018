@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        //定义全局变量
+        var firstNum = document.getElementById("first-number");
+        var secondNum = document.getElementById("second-number");
+        var result = document.getElementById("result");
+        var addBtn = document.getElementById("add-btn");
+        var minusBtn = document.getElementById("minus-btn");
+        var timesBtn = document.getElementById("times-btn");
+        var divideBtn = document.getElementById("divide-btn");
+        addBtn.onclick = function () {
+            if (!firstNum.value || !secondNum.value) {
+                result.textContent = "请输入正确数字";    //也可以用result.innerHTML = "请输入正确数字"
+            } else {
+                result.textContent = "运算结果:" + (Number(firstNum.value) + Number(secondNum.value));
+            }
+        }
+        minusBtn.onclick = function () {
+            if (!firstNum.value || !secondNum.value) {
+                result.textContent = "请输入正确数字";
+            } else {
+                result.textContent = "运算结果：" + (Number(firstNum.value) - Number(secondNum.value))
+            }
+        }
+        timesBtn.onclick = function () {
+            if (!firstNum.value || !secondNum.value) {
+                result.textContent = "请输入正确数字";
+            } else {
+                result.textContent = "运算结果：" + (Number(firstNum.value) * Number(secondNum.value));
+            }
+        }
+        divideBtn.onclick = function () {
+            if (!firstNum.value || !secondNum.value) {
+                result.textContent = "请输入正确数字";
+            } else if (secondNum.value == 0) {
+                result.textContent = "除数不能为0";
+            } else {
+                result.textContent = "运算结果：" + (Number(firstNum.value) / Number(secondNum.value));
+            }
+        }
+    </script>
+</body>
+</html>
