@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>九九乘法表</title>
+	<style type="text/css">
+		table {
+			color: gray;
+			font-weight: 16px;
+			border: 1px gray solid;
+		}
+		tr {
+			border: 1px gray solid;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//最低要求，console输出
+		//for (var i = 0; i < 9; i++) {
+		//	for (var j = 0;j < 9; j++) {
+		//		console.log((i + 1)  + " * " + (j +1) +  " = " + ((i + 1) * (j + 1)));
+		//	}
+		//}
+		//网页乘法表输出
+		document.write("<table>");
+		for (var i = 0; i < 9; i++) {
+			document.write("<tr>");
+			for (var j = 0; j < 9; j++) {
+				document.write("<td>" + (i + 1) + " * " + (j + 1) + " = " + ((i + 1) * (j + 1)) + "</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>
